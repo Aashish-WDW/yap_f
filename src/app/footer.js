@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Components/Footer.module.css';
+import styles from '../components/Footer.module.css';
 import localfont from 'next/font/local';
 
 
