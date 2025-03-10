@@ -1,0 +1,122 @@
+.Main {
+  margin: 0 80px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Foot {
+  background-color: #D9D9D9;
+  height: 100px;
+  border-radius: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.Foot p {
+  font-size: 40px;
+  padding: 0 40px;
+  color: black;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white,
+    -1px 0 0 white,
+    1px 0 0 white,
+    0 1px 0 white,
+    0 -1px 0 white,
+    -2px -2px 0 white,
+    2px -2px 0 white,
+    -2px 2px 0 white,
+    2px 2px 0 white,
+    -2px 0 0 white,
+    2px 0 0 white,
+    0 2px 0 white,
+    0 -2px 0 white,
+    -3px -3px 0 white,
+    3px -3px 0 white,
+    -3px 3px 0 white,
+    3px 3px 0 white,
+    -3px 0 0 white,
+    3px 0 0 white,
+    0 3px 0 white,
+    0 -3px 0 white,
+    -4px -4px 0 white,
+    4px -4px 0 white,
+    -4px 4px 0 white,
+    4px 4px 0 white,
+    -4px 0 0 white,
+    4px 0 0 white,
+    0 4px 0 white,
+    0 -4px 0 white,
+    -5px -5px 0 white,
+    5px -5px 0 white,
+    -5px 5px 0 white,
+    5px 5px 0 white,
+    -5px 0 0 white,
+    5px 0 0 white,
+    0 5px 0 white,
+    0 -5px 0 white;
+}
+
+.iconList {
+  display: flex;
+  padding: 0 40px;
+  gap: 30px;
+}
+
+.Icons {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: #FFC700;
+  box-shadow: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Icons:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.Icons:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .Main {
+    margin: 0 20px;
+    margin-top: 40px;
+  }
+
+  .Foot {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .Foot p {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+
+  .iconList {
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .Icons {
+    height: 40px;
+    width: 40px;
+  }
+}

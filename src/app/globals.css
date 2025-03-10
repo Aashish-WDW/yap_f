@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: #F5F1E1;
+  height: 100%;
+  padding-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.Nav {
+  height: 80px;
+  background-color: #FFC700;
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+
+.Nav p {
+  font-size: 40px;
+}
+
+.Nav p,
+.Btn-main p {
+  color: black;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white,
+    -1px 0 0 white,
+    1px 0 0 white,
+    0 1px 0 white,
+    0 -1px 0 white,
+    -2px -2px 0 white,
+    2px -2px 0 white,
+    -2px 2px 0 white,
+    2px 2px 0 white,
+    -2px 0 0 white,
+    2px 0 0 white,
+    0 2px 0 white,
+    0 -2px 0 white,
+    -3px -3px 0 white,
+    3px -3px 0 white,
+    -3px 3px 0 white,
+    3px 3px 0 white,
+    -3px 0 0 white,
+    3px 0 0 white,
+    0 3px 0 white,
+    0 -3px 0 white,
+    -4px -4px 0 white,
+    4px -4px 0 white,
+    -4px 4px 0 white,
+    4px 4px 0 white,
+    -4px 0 0 white,
+    4px 0 0 white,
+    0 4px 0 white,
+    0 -4px 0 white,
+    -5px -5px 0 white,
+    5px -5px 0 white,
+    -5px 5px 0 white,
+    5px 5px 0 white,
+    -5px 0 0 white,
+    5px 0 0 white,
+    0 5px 0 white,
+    0 -5px 0 white;
+}
+
+.Nav_links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.nav-link-text {
+  font-size: 20px;
+  color: black;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white,
+    -1px 0 0 white,
+    1px 0 0 white,
+    0 1px 0 white,
+    0 -1px 0 white,
+    -2px -2px 0 white,
+    2px -2px 0 white,
+    -2px 2px 0 white,
+    2px 2px 0 white,
+    -2px 0 0 white,
+    2px 0 0 white,
+    0 2px 0 white,
+    0 -2px 0 white;
+}
+
+.card {
+  background-color: #FFC700;
+  border-radius: 26px;
+  box-shadow: 6px 6px 0px 0px black;
+  height: 490px;
+  width: 460px;
+  border: 3px solid black;
+  font-family: "Public Sans", sans-serif;
+  cursor: pointer;
+}
+
+.card-content-dots {
+  height: 10px;
+  width: 10px;
+  color: black;
+  background-color: black;
+  border-radius: 100px;
+}
+
+.card-content {
+  display: flex;
+  gap: 8px;
+  padding: 20px;
+  border-bottom: 3px solid black;
+}
+
+.card-text p {
+  font-weight: 900;
+  font-size: 46px;
+  padding: 30px;
+  line-height: 50px;
+}
+
+.card-text-quote p {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 100;
+  padding: 30px;
+}
+
+.Home_card {
+  display: flex;
+  padding: 80px;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 6px 6px 0px 0px black;
+}
+
+.card:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 6px 6px 0px 0px black;
+}
+
+.hom_img {
+  height: 500px;
+  width: 800px;
+  background-color: bisque;
+}
+
+Image {
+  padding: 40px;
+}
+
+.Btn-main {
+  background: #FFC700;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 56px;
+  border: 5px solid black;
+  box-shadow: 0.1em 0.1em black;
+  cursor: pointer;
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 100px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Btn-main p {
+  margin: 0;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
+.Btn-main p {
+  text-decoration: none !important;
+}
+
+.Btn-main:hover {
+  transform: translate(-0.05em, -0.05em);
+  text-decoration: none !important;
+  box-shadow: 0.15em 0.15em black;
+}
+
+.Btn-main:active {
+  transform: translate(0.05em, 0.05em);
+  text-decoration: none !important;
+  box-shadow: 0.05em 0.05em black;
+}
+
+@media (max-width: 768px) {
+  .Nav {
+    flex-direction: column;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .Nav_links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Nav p {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .nav-link-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Btn-main {
+    font-size: 36px;
+    padding: 0.5em 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 70px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Home_card {
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center align items */
+    padding: 40px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .card {
+    height: auto;
+    /* Allow height to adjust automatically */
+    width: 100%;
+    /* Full width on smaller screens */
+    max-width: 460px;
+    /* Ensure it doesn't get too wide */
+  }
+
+  .card-text p {
+    font-size: 36px;
+    /* Adjust font size */
+    padding: 20px;
+    /* Adjust padding */
+  }
+
+  .card-text-quote p {
+    padding: 20px;
+    /* Adjust padding */
+  }
+
+  .hom_img {
+    height: auto;
+    /* Allow height to adjust automatically */
+    width: 100%;
+    /* Full width on smaller screens */
+    max-width: 800px;
+    /* Ensure it doesn't get too wide */
+  }
+
+  Image {
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-text p {
+    font-size: 28px;
+    /* Further adjust font size */
+    padding: 15px;
+    /* Further adjust padding */
+  }
+
+  .card-text-quote p {
+    padding: 15px;
+    /* Further adjust padding */
+  }
+
+  .Home_card {
+    padding: 20px;
+    /* Further adjust padding */
+  }
+
+  .card {
+    margin: 10px;
+    /* Reduce margin for smaller screens */
+  }
+
+  Image {
+    padding: 10px;
+    /* Further adjust padding */
+  }
+}
+
+@media (max-width: 1024px) {
+  .Home_card {
+    padding: 40px;
+  }
+
+  .card {
+    width: 100%;
+    /* Full width on smaller screens */
+    margin-right: 0;
+    /* Remove margin */
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home_card {
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+    /* Full width on smaller screens */
+    margin-bottom: 20px;
+    padding: 20px;
+    /* Adjust padding */
+  }
+
+  .card-text p {
+    font-size: 20px;
+    /* Further reduce font size */
+  }
+
+  .card-text-quote p {
+    font-size: 16px;
+    /* Further reduce font size */
+  }
+}
+
