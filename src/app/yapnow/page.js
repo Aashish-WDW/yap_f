@@ -7,9 +7,7 @@ import styles from './Page.module.css';
 
 // Socket.io connection
 let socket;
-const SOCKET_SERVER_URL = process.env.NODE_ENV === 'production'
-  ? 'https://yap-0qn0.onrender.com'
-  : 'http://localhost:5000';
+const SOCKET_SERVER_URL = process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || 'http://localhost:5000';
 export default function Home() {
   // States
   const [connected, setConnected] = useState(false);
